@@ -8,6 +8,6 @@ public class BitwiseUtils {
         m <<= i;
         //clear bits i through j in n
         n &= ~(((1 << (j + 1)) - 1) >>> i) << i;
-        return n;
+        return n & m;
     }
 }
